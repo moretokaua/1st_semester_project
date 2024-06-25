@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Meu Perfil</title>
+
+  <!-- favicons -->
+  <link href="img/logologo.png" rel="icon">
+  
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- linkagens com css -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  
+  <!-- linkagem principal com css -->
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+  <!-- header -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+
+        <a href="inicio.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+        <img src="img/logologo.png" class="logojiji" alt="logo">
+        <h1 class="nomedosite">TANOSHI</h1>
+        </a>
+
+
+      <!-- navbar -->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="inicio.html">Início</a></li>
+          <li><a href="categorias.html">Categorias</a></li>
+          <li><a href="personagens.html">Personagens</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+
+      <!-- redes sociais -->
+      <div class="header-social-links">
+        <a href="https://twitter.com" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="pesquisa.html" target="_blank" class="youtube"><i class="bi bi-search"></i></a>
+        <a href="meuperfil.html" class="perfil"><i class="bi bi-person-square"></i></a>
+      </div>
+
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+
+    </div>
+  </header>
+  
+  <div id="pageContainer">
+    <!-- Meu Perfil Page -->
+    <div class="containere container4 mt-5 pt-5">
+      <div class="row">
+        <div class="col-12">
+          <!-- Header Background -->
+          <div class="profile-header" id="profileHeader" style="height: 250px; margin-top:-2rem; background: url('img/headers/branco.png') no-repeat center center; background-size: 500rem;"></div>
+          
+          <!-- Profile Picture -->
+          <div class="profile-picture d-flex" style="margin-top: -40px; margin-left: 55px;">
+            <img src="img/fotoperfil/sakuraicon.jpg" class="rounded-circle" alt="Foto de Perfil" id="profilePic" style="width: 140px; height: 140px;">
+          </div>
+        </div>
+      </div>
+      
+      <div class="containere mt-5 pt-5">
+        <div class="row">
+          <div class="col-12">
+            <!-- Header Background -->
+            <div class="profile-header"></div>
+            <!-- Profile Info -->
+            <div class="profile-info">
+              <h3 id="profileName">Nome do Usuário</h3>
+            </div>
+            <button class="btn butones" data-bs-toggle="modal" data-bs-target="#editProfileModal">Editar Perfil</button>
+          </div>
+        </div>
+        </div>
+      </div>
+      
+      <!-- sessão MINHA LISTA -->
+      <div class="section-header uepa">
+        <p>Minha lista:</p>
+        <input type="text" id="searchInput" placeholder="Pesquisar...">
+      </div>
+      
+      <section id="myList" class="my-list anime-list">
+        <div class="containere">
+          <ul id="animeList" class="anime-list">
+            <div id="animeList" class="anime-list">
+              <!-- Os animes serão adicionados aqui dinamicamente -->
+            </div>
+          </ul>
+        </div>
+      </section>
+      
+      <!-- PARTE DO MODAL -->
+      <div class="modal fade" id="editProfileModal" tabindex="-1" aria-labelledby="editProfileModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0">
+            <div class="modal-header">
+              <h5 class="modal-title" id="editProfileModalLabel">Editar Perfil</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="editProfileForm">
+                <div class="mb-3">
+                  <label for="username" class="form-label">Nome de Usuário</label>
+                  <input type="text" class="form-control" id="usernameInput" placeholder="Digite seu novo usuário...">
+                </div>
+                
+                <div class="mb-3">
+                  <label class="form-label">Foto de Perfil</label>
+                  <div class="d-flex">
+                    <img src="img/fotoperfil/erenicon.jpg" class="profile-pic-option rounded-circle" alt="Ícone 1" style="width: 80px; height: 80px; cursor: pointer;" onclick="selectProfilePic('img/fotoperfil/erenicon.jpg')">
+                    <img src="img/fotoperfil/lighticon.jpg" class="profile-pic-option rounded-circle" alt="Ícone 2" style="width: 80px; height: 80px; cursor: pointer;" onclick="selectProfilePic('img/fotoperfil/lighticon.jpg')">
+                    <img src="img/fotoperfil/luffyicon.jpg" class="profile-pic-option rounded-circle" alt="Ícone 2" style="width: 80px; height: 80px; cursor: pointer;" onclick="selectProfilePic('img/fotoperfil/luffyicon.jpg')">
+                    <img src="img/fotoperfil/narutoicon.jpg" class="profile-pic-option rounded-circle" alt="Ícone 3" style="width: 80px; height: 80px; cursor: pointer;" onclick="selectProfilePic('img/fotoperfil/narutoicon.jpg')">
+                    <img src="img/fotoperfil/tuxedoicon.jpg" class="profile-pic-option rounded-circle" alt="Ícone 3" style="width: 80px; height: 80px; cursor: pointer;" onclick="selectProfilePic('img/fotoperfil/tuxedoicon.jpg')">
+                  </div>
+                  <div class="d-flex">
+                    <img src="img/fotoperfil/mikasaicon.jpg" class="profile-pic-option rounded-circle" alt="Ícone 1" style="width: 80px; height: 80px; cursor: pointer;" onclick="selectProfilePic('img/fotoperfil/mikasaicon.jpg')">
+                    <img src="img/fotoperfil/misaicon.jpg" class="profile-pic-option rounded-circle" alt="Ícone 2" style="width: 80px; height: 80px; cursor: pointer;" onclick="selectProfilePic('img/fotoperfil/misaicon.jpg')">
+                    <img src="img/fotoperfil/namiicon.jpg" class="profile-pic-option rounded-circle" alt="Ícone 2" style="width: 80px; height: 80px; cursor: pointer;" onclick="selectProfilePic('img/fotoperfil/namiicon.jpg')">
+                    <img src="img/fotoperfil/sakuraicon.jpg" class="profile-pic-option rounded-circle" alt="Ícone 3" style="width: 80px; height: 80px; cursor: pointer;" onclick="selectProfilePic('img/fotoperfil/sakuraicon.jpg')">
+                    <img src="img/fotoperfil/sailormoonicon.jpg" class="profile-pic-option rounded-circle" alt="Ícone 3" style="width: 80px; height: 80px; cursor: pointer;" onclick="selectProfilePic('img/fotoperfil/sailormoonicon.jpg')">
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Foto do Cabeçalho</label>
+                  <div class="d-flex containerzito">
+                    <img src="img/headers/azul.webp" class="header-pic-option rounded m-1" alt="Header 1" style="width: 150px; height: 80px; cursor: pointer;" onclick="selectHeaderPic('img/headers/azul.webp')">
+                    <img src="img/headers/branco.png" class="header-pic-option rounded m-1" alt="Header 2" style="width: 150px; height: 80px; cursor: pointer;" onclick="selectHeaderPic('img/headers/branco.png')">
+                    <img src="img/headers/preto.jpg" class="header-pic-option rounded m-1" alt="Header 3" style="width: 150px; height: 80px; cursor: pointer;" onclick="selectHeaderPic('img/headers/preto.jpg')">
+                  </div>
+                  <div class="d-flex containerzito">
+                    <img src="img/headers/rosa.png" class="header-pic-option rounded m-1" alt="Header 1" style="width: 150px; height: 80px; cursor: pointer;" onclick="selectHeaderPic('img/headers/rosa.png')">
+                    <img src="img/headers/roxo.webp" class="header-pic-option rounded m-1" alt="Header 2" style="width: 150px; height: 80px; cursor: pointer;" onclick="selectHeaderPic('img/headers/roxo.webp')">
+                    <img src="img/headers/vermelho.jpg" class="header-pic-option rounded m-1" alt="Header 3" style="width: 150px; height: 80px; cursor: pointer;" onclick="selectHeaderPic('img/headers/vermelho.jpg')">
+                  </div>
+                </div>
+                <button type="submit" class="btn">Salvar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main" data-aos="fade" data-aos-delay="1300"></main>
+    
+
+
+  </main>
+
+
+  <!-- vendor JS -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="js/main.js"></script>
+  <script src="./js/deletar.js"></script>
+
+</body>
+</html>

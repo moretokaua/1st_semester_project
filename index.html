@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  
+      <link rel="stylesheet" href="assetes/css/styles.css">
+
+      <title>Login</title>
+   </head>
+   <body>
+      <div class="login">
+         <img src="assetes/img/wp9494987.webp" alt="login image" class="login__img">
+
+         <form action="" class="login__form" onsubmit="return false;">
+            <h1 class="login__title">Welcome to Tanoshi!</h1>
+
+            <div class="login__content">
+               <div class="login__box">
+                  <i class="ri-mail-line"></i>
+
+                  <div class="login__box-input">
+                     <input type="email" required class="login__input" id="email" placeholder=" ">
+                     <label for="login-email" class="login__label">Email</label>
+                  </div>
+               </div>
+
+               <div class="login__box">
+                  <i class="ri-lock-2-line login__icon"></i>
+
+                  <div class="login__box-input">
+                     <input type="password" required class="login__input" id="senha" placeholder=" ">
+                     <label for="login-pass" class="login__label">Password</label>
+                    
+                  </div>
+               </div>
+            </div>
+            
+           
+            <button class="login__button" id="login">Login</button>
+           <p class="login__register">
+            Don't have an account? <a href="cadastro.html">Sign up</a>
+         </p>
+
+         </form>
+      </div>
+      
+      
+      <script src="assetes/js/login.js"></script>
+   </body>
+</html>

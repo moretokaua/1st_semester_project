@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Welcome To TANOSHI</title>
+
+
+  <!-- favicons // é o ícone que aparece na barra de endereços do navegador, abas da página e etc -->
+  <link href="img/logologo.png" rel="icon">
+
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+
+  <!-- linkagens com css -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> <!-- bootstrap -->
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> <!-- icons bootstrap-->
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> <!-- swiper // framework de slider -->
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"> <!-- gligthbox // janelas modais ou lightboxes -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet"> <!-- aos // cria animações ao rolar a página -->
+
+
+  <!-- linkagem principal com css -->
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- header -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+
+        <a href="inicio.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+        <img src="img/logologo.png" class="logojiji" alt="logo">
+        <h1 class="nomedosite">TANOSHI</h1>
+        </a>
+
+
+      <!-- navbar -->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="inicio.html">Início</a></li>
+          <li><a href="categorias.html">Categorias</a></li>
+          <li><a href="personagens.html">Personagens</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+
+      <!-- redes sociais -->
+      <div class="header-social-links">
+        <a href="https://twitter.com" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="pesquisa.html" target="_blank" class="youtube"><i class="bi bi-search"></i></a>
+        <a href="meuperfil.html" class="perfil"><i class="bi bi-person-square"></i></a>
+      </div>
+
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+
+    </div>
+  </header>
+
+ <body>
+
+<main id="main" data-aos="fade" data-aos-delay="1500">
+
+<!-- carrossel -->
+<div id="animeCarousel" class="carousel slide custom-carousela" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="img/carrosselinicio/aot.png" class="d-block w-100" alt="Attack on Titan">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="carousel-title">Attack on Titan</h5>
+          <p class="carousel-text">Ambientado num mundo onde a humanidade luta contra 
+            gigantes devoradores de humanos, 
+            veja Eren Yeager e seus amigos em uma jornada para desvendar os mistérios 
+            por trás dos titãs, mergulhando em temas de sobrevivência.</p>
+          <button class="btn mt-1 botaow"><a href="attackontitan.html"  class="details-link">Ver Sobre</a></button>
+        </div>
+      </div>
+
+
+      <div class="carousel-item">
+        <img src="img/carrosselinicio/bnha.png" class="d-block w-100" alt="Black Butler">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="carousel-title">My Hero Academia</h5>
+          <p class="carousel-text">
+            Acompanhe Izuku Midoriya em sua jornada para se tornar 
+            um herói, ingressando em uma escola de heróis e enfrentando desafios 
+            emocionantes enquanto aprende o verdadeiro significado de ser um herói.</p>
+            <button class="btn btn-primary mt-1 botaow"><a href="myheroacademia.html"  class="details-link">Ver Sobre</a></button>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="img/carrosselinicio/demonslayer.png" class="d-block w-100" alt="Classroom of the Elite">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="carousel-title">Demon Slayer</h5>
+          <p class="carousel-text">A história de Tanjiro Kamado, um jovem que se torna um caçador de demônios após 
+            sua família ser massacrada por um demônio, 
+            em uma jornada para vingar seus entes queridos e salvar sua irmã transformada em demônio.</p>
+            <button class="btn btn-primary mt-1 botaow"><a href="demonslayer.html"  class="details-link">Ver Sobre</a></button>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="img/carrosselinicio/jjk.png" class="d-block w-100" alt="Death Note">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="carousel-title">Jujutsu Kaisen</h5>
+          <p class="carousel-text">Siga Yuji Itadori enquanto ele se envolve com maldições e 
+            artes místicas ao se tornar um usuário de 
+            Jujutsu para proteger o 
+            mundo dos seres ameaçadores, em uma trama cheia de ação e mistério.</p>
+            <button class="btn btn-primary mt-1 botaow"><a href="jujutsukaisen.html"  class="details-link">Ver Sobre</a></button>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="img/carrosselinicio/onepiece.png" class="d-block w-100" alt="Demon Slayer">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="carousel-title">One Piece</h5>
+          <p class="carousel-text">A jornada de Monkey D. Luffy e sua tripulação em busca do lendário tesouro One Piece, 
+            enquanto enfrentam perigos, desafios e 
+            inimigos poderosos em um mundo repleto de aventuras e pirataria.</p>
+            <button class="btn btn-primary mt-1 botaow"><a href="onepiece.html"  class="details-link">Ver Sobre</a></button>
+        </div>
+      </div>
+    </div>
+
+
+    <button class="carousel-control-prev prev2" type="button" data-bs-target="#animeCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next prev2" type="button" data-bs-target="#animeCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+    <section id="cards" class="cards">
+        <div class="container">
+          <div class="row">
+
+            <!-- ATTACK ON TITAN -->
+            <div class="col-md-2">
+              <div class="card card1">
+                <a href="attackontitan.html"  class="details-link">
+                <img src="img/capadeanimes/maisfamosos/attackontitan.jpe" class="card-img-top gallery-img" alt="...">
+                <div class="card-body">
+                </a>
+                </div>
+                </a>
+              </div>
+            </div>
+
+
+            <!-- BLACK BUTLER -->
+            <div class="col-md-2">
+                <div class="card card1">
+                  <a href="blackbutler.html"  class="details-link">
+                  <img src="img/capadeanimes/maisfamosos/blackbutler.jpe" class="card-img-top gallery-img" alt="...">
+                  <div class="card-body">
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+
+            <!-- CLASSROOM OF THE ELITE -->
+              <div class="col-md-2">
+                <div class="card card1">
+                  <a href="classroomoftheelite.html"  class="details-link">
+                  <img src="img/capadeanimes/maisfamosos/classroomoftheelite.jpe" class="card-img-top gallery-img" alt="...">
+                  <div class="card-body">
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+
+            <!-- DEATH NOTE -->
+              <div class="col-md-2">
+                <div class="card card1">
+                  <a href="deathnote.html"  class="details-link">
+                  <img src="img/capadeanimes/maisfamosos/deathnote.jpe" class="card-img-top gallery-img" alt="...">
+                  <div class="card-body">
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DEMON SLAYER -->
+              <div class="col-md-2">
+                <div class="card card1">
+                  <a href="demonslayer.html"  class="details-link">
+                  <img src="img/capadeanimes/maisfamosos/demonslayer.jpe" class="card-img-top gallery-img" alt="...">
+                  <div class="card-body">
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- HUNTER X HUNTER -->
+              <div class="col-md-2">
+                <div class="card">
+                  <a href="hunterxhunter.html"  class="details-link">
+                  <img src="img/capadeanimes/maisfamosos/hunterxhunter.jpe" class="card-img-top gallery-img" alt="...">
+                  <div class="card-body">
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- JOJO -->
+              <div class="col-md-2">
+                <div class="card">
+                  <a href="jojo.html"  class="details-link">
+                  <img src="img/capadeanimes/maisfamosos/jojo.jpe" class="card-img-top gallery-img" alt="...">
+                  <div class="card-body">
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- JUJUTSU KAISEN -->
+              <div class="col-md-2">
+                <div class="card">
+                  <a href="jujutsukaisen.html"  class="details-link">
+                  <img src="img/capadeanimes/maisfamosos/jujutsukaisen.jpe" class="card-img-top gallery-img" alt="...">
+                  <div class="card-body">
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- KIMI NI TODOKE -->
+              <div class="col-md-2">
+                <div class="card">
+                  <a href="kiminitodoke.html"  class="details-link">
+                  <img src="img/capadeanimes/maisfamosos/kiminitodoke.jpe" class="card-img-top gallery-img" alt="...">
+                  <div class="card-body">
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- MOB PSYCHO -->
+              <div class="col-md-2">
+                <div class="card">
+                  <a href="mobpsycho100.html"  class="details-link">
+                  <img src="img/capadeanimes/maisfamosos/mobpsycho.jpe" class="card-img-top gallery-img" alt="...">
+                  <div class="card-body">
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- MONSTER -->
+              <div class="col-md-2">
+                <div class="card">
+                  <a href="monster.html"  class="details-link">
+                  <img src="img/capadeanimes/maisfamosos/monster.jpg" class="card-img-top gallery-img" alt="...">
+                  <div class="card-body">
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- MY HERO ACADEMIA -->
+              <div class="col-md-2">
+                <div class="card">
+                  <a href="myheroacademia.html"  class="details-link">
+                  <img src="img/capadeanimes/maisfamosos/myheroacademia.jpe" class="card-img-top gallery-img" alt="...">
+                  <div class="card-body">
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- NARUTO -->
+              <div class="col-md-2">
+                <div class="card">
+                  <a href="naruto.html"  class="details-link">
+                  <img src="img/capadeanimes/maisfamosos/naruto.jpe" class="card-img-top gallery-img" alt="...">
+                  <div class="card-body">
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- NEON GENESIS EVANGELION -->
+              <div class="col-md-2">
+                <div class="card">
+                  <a href="neongenesisevangelion.html"  class="details-link">
+                  <img src="img/capadeanimes/maisfamosos/neongenesis.jpg" class="card-img-top gallery-img" alt="...">
+                  <div class="card-body">
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ONE PIECE -->
+              <div class="col-md-2">
+                <div class="card">
+                  <a href="onepiece.html"  class="details-link">
+                  <img src="img/capadeanimes/maisfamosos/onepiece.jpe" class="card-img-top gallery-img" alt="...">
+                  <div class="card-body">
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SPY X FAMILY -->
+              <div class="col-md-2">
+                <div class="card">
+                  <a href="spyxfamily.html"  class="details-link">
+                  <img src="img/capadeanimes/maisfamosos/spyxfamily.jpe" class="card-img-top gallery-img" alt="...">
+                  <div class="card-body">
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- THE PROMISED NEVERLAND -->
+              <div class="col-md-2">
+                <div class="card">
+                  <a href="thepromisedneverland.html"  class="details-link">
+                  <img src="img/capadeanimes/maisfamosos/thepromisedneverland.jpe" class="card-img-top gallery-img" alt="...">
+                  <div class="card-body">
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- TOKYO GHOUL -->
+              <div class="col-md-2">
+                <div class="card">
+                  <a href="tokyoghoul.html"  class="details-link">
+                  <img src="img/capadeanimes/maisfamosos/tokyoghoul.webp" class="card-img-top gallery-img" alt="...">
+                  <div class="card-body">
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- TOKYO REVENGERS -->
+              <div class="col-md-2">
+                <div class="card">
+                  <a href="tokyorevengers.html"  class="details-link">
+                  <img src="img/capadeanimes/maisfamosos/tokyorevengers.jpe" class="card-img-top gallery-img" alt="...">
+                  <div class="card-body">
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ONE PUNCH MAN -->
+              <div class="col-md-2">
+                <div class="card">
+                  <a href="onepunchman.html"  class="details-link">
+                  <img src="img/capadeanimes/maisfamosos/onepunchman.webp" class="card-img-top gallery-img" alt="...">
+                  <div class="card-body">
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </section>
+
+  </main>
+
+
+  <!-- footer -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>TANOSHI</span></strong>. Todos os Direitos Reservados.
+      </div>
+      <div class="credits">
+        Feito por <a href="https://github.com/ProgrammingTitans">Royal Group</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader">
+    <div class="line"></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
